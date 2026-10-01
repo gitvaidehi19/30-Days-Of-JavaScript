@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Manager</h1>
+        <p class="subtitle">Track your income and expenses</p>
+
+        <div class="form">
+           <label>Monthly Income:</label>
+    <input type="text" id="income" placeholder="Enter your income">
+    <br>
+    <br>
+    <label for="rent">Rent:</label>
+    <input type="text" id="rent" placeholder="Enter rent">
+    <br>
+    <br>
+    <label>Food:</label>
+    <input type="text" id="food" placeholder="Enter food expenses">
+    <br>
+    <br>
+    <label>Transport:</label>
+    <input type="text" id="transport" placeholder="Enter transport expenses">
+    <br>
+    <br>
+    <label>Entertainment:</label>
+    <input type="text" id="entertainment" placeholder="Enter entertainment expenses">
+    <br>
+    <br>
+    <label>Other Expenses:</label>
+    <input type="text" id="other" placeholder="Enter other expenses">
+    <br>
+    <br>
+    <button id="calculateBtn">Calculate Expense</button>
+    </div>
+
+    <div class="result">
+    <h2>Financial Summary</h2>
+
+    <p>
+        Monthly Income:
+        <span id="incomeResult">Rs 0</span>
+    </p>
+
+    <p>
+        Total Expense:
+        <span id="expenseResult">Rs 0</span>
+    </p>
+
+    <p>
+        Remaining Balance:
+        <span id="balanceResult">Rs 0</span>
+    </p>
+
+    <p>
+        Savings Percentage:
+        <span id="savingsResult">0%</span>
+    </p>
+
+    <p id="message"></p>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
