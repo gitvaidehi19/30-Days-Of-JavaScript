@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Analyzer</h1>
+        <div class="form">
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+            <br>
+            <br>
+
+            <label for="maths">Maths:</label>
+            <input type="text" id="maths" placeholder="Enter your Maths Marks">
+            <br>
+            <br>
+
+            <label for="science">Science:</label>
+            <input type="text" id="science" placeholder="Enter your Science Marks">     
+            <br>
+            <br>
+
+            <label for="english">English:</label>
+            <input type="text" id="english" placeholder="Enter your English Marks">
+            <br>
+            <br>
+
+            <label for="computer">Computer:</label>
+            <input type="text" id="computer" placeholder="Enter your Computer Marks">
+            <br>
+            <br>
+
+            <label for="social">Social Studies:</label>
+            <input type="text" id="social" placeholder="Enter your Social Studies Marks">
+            <br>
+            <br>
+
+            <button id="analyzeBtn">Analyze Performance</button>
+        </div>
+
+        <div class="result">
+            <h2>Performane Report</h2>
+            <p>
+                Student Name:
+                <span id="printName">N/A</span>
+            </p>
+
+            <p>
+                Total Marks:
+                <span id="printTotal">0</span>
+            </p>
+
+            <p>
+                Average Marks:
+                <span id="printAverage">0</span>
+            </p>
+
+            <p>
+                Grade:
+                <span id="printGrade">N/A</span>
+            </p>
+
+            <p>
+                Result:
+                <span id="printResult">N/A</span>
+            </p>
+
+            <br>
+            <br>
+
+            <p>
+                Highest Marks:
+                <span id="printHighest">N/A</span>
+            </p>
+
+            <p>
+                Lowest Marks:
+                <span id="printLowest">N/A</span>
+            </p>
+
+            <p>
+                Subject-wise Performance:
+                <span id="printSubjectPerformance">N/A</span>
+            </p>
+
+        </div>
+        <p id="message"></p>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
