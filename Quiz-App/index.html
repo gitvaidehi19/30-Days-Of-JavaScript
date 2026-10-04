@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+
+            <h1>JavaScript Quiz</h1>
+
+            <p>
+                Question <span id="questionNumber">1</span> of 
+                <span id="totalQuestions">5</span>
+            </p>
+
+        </div>
+
+        <div class="question-section">
+
+            <h2 id="question">
+                Which keyword is used to declare a variable in JavaScript?
+            </h2>
+
+        </div>
+
+
+        <div class="options-section">
+
+            <button class="option" id="option1">
+                var
+            </button>
+
+            <button class="option" id="option2">
+                print
+            </button>
+
+            <button class="option" id="option3">
+                echo
+            </button>
+
+            <button class="option" id="option4">
+                display
+            </button>
+
+        </div>
+
+
+        <div class="button-section">
+
+            <button id="nextBtn">
+                Next Question
+            </button>
+
+        </div>
+
+
+        <div class="score-section">
+
+            <p>
+                Score: <span id="score">0</span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
