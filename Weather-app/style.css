@@ -1,0 +1,222 @@
+/* =========================
+   General Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Body
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #87ceeb, #f5f7fa);
+
+    color: #333;
+}
+
+
+/* =========================
+   Main Weather Container
+========================= */
+
+body {
+    padding: 20px;
+}
+
+h1,
+input,
+button,
+hr,
+#weatherInfo {
+    max-width: 500px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+h1 {
+    position: absolute;
+    top: 80px;
+
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* =========================
+   Input
+========================= */
+
+input {
+    width: 300px;
+
+    padding: 14px 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   Button
+========================= */
+
+button {
+    padding: 14px 20px;
+
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #1976d2;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #125ca3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Horizontal Line
+========================= */
+
+hr {
+    width: 500px;
+
+    margin: 30px auto;
+
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================
+   Weather Information Card
+========================= */
+
+#weatherInfo {
+    width: 500px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   Weather Heading
+========================= */
+
+#weatherInfo h2 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    color: #1976d2;
+}
+
+
+/* =========================
+   Weather Information
+========================= */
+
+#weatherInfo p {
+    margin: 12px 0;
+
+    font-size: 18px;
+
+    color: #444;
+}
+
+
+/* =========================
+   Temperature
+========================= */
+
+#temperature {
+    font-size: 28px !important;
+
+    font-weight: bold;
+
+    color: #e65100 !important;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        position: static;
+
+        margin-bottom: 25px;
+
+        font-size: 30px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    button {
+        margin-top: 12px;
+        margin-left: 0;
+
+        width: 100%;
+        max-width: 350px;
+    }
+
+    hr {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #weatherInfo {
+        width: 100%;
+        max-width: 350px;
+    }
+}
